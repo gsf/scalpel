@@ -1,0 +1,11 @@
+{
+  "name": "scalpel",
+  "version": "0.0.0",
+  "description": "A small request body parser for node",
+  "homepage": "https://github.com/gsf/scalpel",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gsf/scalpel.git"
+  },
+  "main": "scalpel.js"
+}
