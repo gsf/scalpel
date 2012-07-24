@@ -1,6 +1,6 @@
 {
   "name": "scalpel",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A small request body parser for node",
   "author" : "Gabriel Farrell <g@grrawr.com>",
   "homepage": "https://github.com/gsf/scalpel",
