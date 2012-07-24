@@ -1,6 +1,6 @@
 {
   "name": "scalpel",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A small request body parser for node",
   "homepage": "https://github.com/gsf/scalpel",
   "repository": {
