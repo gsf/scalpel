@@ -20,8 +20,12 @@ module.exports = function scalpel(req, res, next) {
     if (!req.body) return next()
     for (i=0; i<parsers.length; i++) {
       parser = parsers[i]
-      if (!ct.indexOf(parser.mime)) {
-        req.body = parser.parse(req.body)
+      if (ct && !ct.indexOf(parser.mime)) {
+        try {
+          req.body = parser.parse(req.body)
+        } catch (e) {
+          // just pass body as string if it can't be parsed
+        }
       }
     }
     next()
