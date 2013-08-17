@@ -22,7 +22,7 @@ module.exports = function scalpel(req, res, next) {
       parser = parsers[i]
       if (ct && !ct.indexOf(parser.mime)) {
         try {
-          req.body = parser.parse(req.body)
+          req.parsedBody = parser.parse(req.body)
         } catch (e) {
           // just pass body as string if it can't be parsed
         }
